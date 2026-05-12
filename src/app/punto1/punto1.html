@@ -1,0 +1,50 @@
+<div class="container mt-5">
+
+  <div class="card shadow-lg mx-auto" style="max-width: 500px;">
+
+    <img 
+      [src]="'assets/' + eventos[indice].img" 
+      class="card-img-top"
+      alt="evento"
+    >
+
+    <div class="card-body text-center">
+
+      <h3 class="card-title">
+        {{ eventos[indice].nombre }}
+      </h3>
+
+      <p class="card-text">
+        {{ eventos[indice].descripcion }}
+      </p>
+
+<div class="d-flex mt-4">
+
+  @if(indice > 0){
+
+    <button 
+      class="btn btn-outline-primary"
+      (click)="anterior()"
+    >
+      ⬅ Anterior
+    </button>
+
+  }
+
+  @if(indice < eventos.length - 1){
+
+    <button 
+      class="btn btn-outline-primary ms-auto"
+      (click)="siguiente()"
+    >
+      Siguiente ➡
+    </button>
+
+  }
+
+</div>
+
+  </div>
+  </div>
+
+</div>

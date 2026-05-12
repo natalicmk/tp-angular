@@ -1,0 +1,17 @@
+.navbar {
+  padding: 15px;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+}
